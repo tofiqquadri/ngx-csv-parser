@@ -69,7 +69,7 @@ export class AppModule { }
 * delimiter: the marking factor which decides which symbol should be used to split the file.
 * Default delimiter is: `','`
 
-# Use the import NgKeycloakService in your component.
+# Use the import NgxCsvParser in your component.
 
 ```typescript
 import { Component } from '@angular/core';
