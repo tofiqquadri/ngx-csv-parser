@@ -1,6 +1,49 @@
 {
   "name": "angular-csvparser",
   "version": "0.0.0",
+  "description":"CSV Import Library for Angular Framework. Go through the README.md file for detailed features and documentation.",
+  "author": {
+    "name": "Tofiq Quadri",
+    "url": "https://linkedin.com/in/tofiqquadri",
+    "email": "tofiqquadri@developershive.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tofiqquadri/ngx-csv-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tofiqquadri/ngx-csv-parser/issues"
+  },
+  "homepage": "https://github.com/tofiqquadri/ngx-csv-parser",
+  "keywords": [
+    "angular csv import",
+    "csv import",
+    "ngx csv import",
+    "angular",
+    "csv",
+    "import csv file in angular",
+    "csv",
+		"parser",
+		"parse",
+		"parsing",
+		"delimited",
+		"text",
+		"data",
+		"auto-detect",
+		"comma",
+		"tab",
+		"pipe",
+		"file",
+		"filereader",
+		"stream",
+		"worker",
+		"workers",
+		"thread",
+		"threading",
+		"multi-threaded",
+		"jquery-plugin"
+  ],
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
