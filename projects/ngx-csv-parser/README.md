@@ -12,14 +12,14 @@ This is a CSV Parser library which will help you to parse a selected CSV File in
 `npm i ngx-csv-parser`
 
 # API
-`import { NgxCsvParserModule } from 'projects/ngx-csv-parser/src/public-api;`
+`import { NgxCsvParserModule } from 'ngx-csv-parser;`
 
 # Usage
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxCsvParserModule } from 'projects/ngx-csv-parser/src/public-api';
+import { NgxCsvParserModule } from 'ngx-csv-parser';
 
 import { AppComponent } from './app.component';
 
@@ -74,8 +74,8 @@ export class AppModule { }
 ```typescript
 import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
-import { NgxCsvParser } from 'projects/ngx-csv-parser/src/public-api';
-import { NgxCSVParserError } from 'projects/ngx-csv-parser/src/public-api';
+import { NgxCsvParser } from 'ngx-csv-parser';
+import { NgxCSVParserError } from 'ngx-csv-parser';
 
 @Component({
   selector: 'app-root',
