@@ -1,6 +1,6 @@
 {
   "name": "angular-csvparser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CSV Import Library for Angular Framework. Go through the README.md file for detailed features and documentation.",
   "author": {
     "name": "Tofiq Quadri",
