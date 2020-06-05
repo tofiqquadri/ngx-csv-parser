@@ -7,7 +7,15 @@ import { NgxCSVParserError } from './_model/ngx-csv-parser-error.interface';
 })
 export class NgxCsvParser {
 
-  constructor() { }
+  constructor() { 
+    console.log(`
+      *****************************************************
+      ***      For Custom Software/Web development      ***
+      *** Reach out to us at contact@developershive.com ***
+      ***     Visit us at https://developershive.com    ***
+      *****************************************************
+    `);    
+  }
 
   private defaultCSVParserConfig = {
     header: true,
@@ -20,8 +28,6 @@ export class NgxCsvParser {
       ...this.defaultCSVParserConfig,
       ...config
     };
-
-    console.log(config);
 
     const ngxCSVParserObserver = Observable.create((observer: Observer<Array<any> | NgxCSVParserError>) => {
       try {
