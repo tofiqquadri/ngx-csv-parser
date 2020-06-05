@@ -17,7 +17,7 @@ export class AppComponent {
   constructor(private ngxCsvParser: NgxCsvParser) {
   }
 
-  @ViewChild('fileImportInput', { static: false }) fileImportInput: any;
+  @ViewChild('fileImportInput') fileImportInput: any;
 
   fileChangeListener($event: any): void {
 
