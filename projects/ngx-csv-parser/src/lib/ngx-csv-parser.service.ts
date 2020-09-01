@@ -68,7 +68,7 @@ export class NgxCsvParser {
     }
 
     csvStringToArray(csvDataString: string, delimiter: string) {
-        const regexPattern = new RegExp((`(\\${delimiter}|\\r?\\n|\\r|^)(?:\"((?:\\\\.|\"\"|[^\\\\\"])*)\"|([^\\${delimiter}\"\\r\\n]*))`),"gi")
+        const regexPattern = new RegExp((`(\\${delimiter}|\\r?\\n|\\r|^)(?:\"((?:\\\\.|\"\"|[^\\\\\"])*)\"|([^\\${delimiter}\"\\r\\n]*))`), "gi")
         let matchedPatternArray = regexPattern.exec(csvDataString);
         const resultCSV = [[]];
         while (matchedPatternArray) {
@@ -76,7 +76,7 @@ export class NgxCsvParser {
                 resultCSV.push([]);
             }
             const cleanValue = matchedPatternArray[2] ?
-                matchedPatternArray[2].replace(new RegExp( "[\\\\\"](.)", "g" ), '$1') : matchedPatternArray[3];
+                matchedPatternArray[2].replace(new RegExp("[\\\\\"](.)", "g"), '$1') : matchedPatternArray[3];
             resultCSV[resultCSV.length - 1].push(cleanValue);
             matchedPatternArray = regexPattern.exec(csvDataString);
         }
@@ -97,7 +97,11 @@ export class NgxCsvParser {
                 const csvRecord = {};
 
                 for (let j = 0; j < data.length; j++) {
-                    csvRecord[headersArray[j]] = data[j].trim();
+                    if ((data[j] === undefined) || (data[j] === null)) {
+                        csvRecord[headersArray[j]] = "";
+                    } else {
+                        csvRecord[headersArray[j]] = data[j].trim();
+                    }
                 }
                 dataArr.push(csvRecord);
             } else {

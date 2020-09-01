@@ -1,6 +1,6 @@
 {
   "name": "ngx-csv-parser",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "CSV Import Library for Angular Framework. Go through the README.md file for detailed features and documentation.",
   "author": {
     "name": "Tofiq Quadri",

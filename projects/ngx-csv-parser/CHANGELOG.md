@@ -1,3 +1,7 @@
+# NgxCsvParser - v0.0.6 (01/08/2020)
+* New Features:
+* Fix undefined issue for the header
+
 # NgxCsvParser - v0.0.5 (27/07/2020)
 * New Features:
 * Compliance updated as per RFC 4180
