@@ -1,3 +1,7 @@
+# NgxCsvParser - v0.0.7 (26/02/2021)
+* New Features:
+* Case insensitive check for csv file extension
+
 # NgxCsvParser - v0.0.6 (01/08/2020)
 * New Features:
 * Fix undefined issue for the header

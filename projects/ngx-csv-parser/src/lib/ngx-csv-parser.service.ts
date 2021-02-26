@@ -7,17 +7,6 @@ import { NgxCSVParserError } from './_model/ngx-csv-parser-error.interface';
 })
 export class NgxCsvParser {
 
-    constructor() {
-        console.log(`
-      *****************************************************
-      ***      For Custom Software/Web development      ***
-      *** Reach out to us at contact@developershive.com ***
-      ***  Support us https://patreon.com/tofiqquadri/  ***
-      ***     Visit us at https://developershive.com    ***
-      *****************************************************
-    `);
-    }
-
     private defaultCSVParserConfig = {
         header: true,
         delimiter: ','
@@ -112,7 +101,7 @@ export class NgxCsvParser {
     }
 
     isCSVFile(file: any) {
-        return file.name.endsWith('.csv');
+        return file.name.toLowerCase().endsWith('.csv');
     }
 
     getHeaderArray(csvRecordsArr: any) {
