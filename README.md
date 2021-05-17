@@ -38,6 +38,8 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 ```
+## Sponsor this library on Patreon 🎅:
+- Patreon <a href="https://www.patreon.com/tofiqquadri" target="_blank">Tofiq Quadri</a> ✔
 
 # Configuration
 
