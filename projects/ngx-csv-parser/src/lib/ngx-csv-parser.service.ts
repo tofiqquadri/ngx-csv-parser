@@ -9,7 +9,8 @@ export class NgxCsvParser {
 
     private defaultCSVParserConfig = {
         header: true,
-        delimiter: ','
+        delimiter: ',',
+        encoding: 'UTF-8'
     };
 
     parse(csvFile: File, config: CSVParserConfig): Observable<Array<any> | NgxCSVParserError> {
@@ -26,7 +27,7 @@ export class NgxCsvParser {
                 if (this.isCSVFile(csvFile)) {
 
                     const reader = new FileReader();
-                    reader.readAsText(csvFile);
+                    reader.readAsText(csvFile, config.encoding);
 
                     reader.onload = () => {
                         const csvData = reader.result;
@@ -143,6 +144,7 @@ export class NgxCsvParser {
 class CSVParserConfig {
     header?: boolean;
     delimiter?: string;
+    encoding?: string;
 
     constructor() { }
 }
