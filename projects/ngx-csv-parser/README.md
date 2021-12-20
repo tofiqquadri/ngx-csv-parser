@@ -102,7 +102,7 @@ export class AppComponent {
     const files = $event.srcElement.files;
 
     // Parse the file you want to select for the operation along with the configuration
-    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',' })
+    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',', encoding: 'utf8' })
       .pipe().subscribe((result: Array<any>) => {
 
         console.log('Result', result);
