@@ -1,6 +1,6 @@
 # NgxCsvParser
 
-* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 10.x.x+ as tested along with backward compatibility with previous Angular versions.
+* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 13.x.x+ as tested along with backward compatibility with previous Angular versions.
 
 * This library is in compliance to RFC 4180
 
@@ -72,6 +72,47 @@ export class AppModule { }
 * Default delimiter is: `','`
 
 # Use the import NgxCsvParser in your component.
+
+## For ngx-csv-parser version 1.1.0 and above
+
+```typescript
+import { Component, ViewChild } from '@angular/core';
+import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  csvRecords: any;
+  header: boolean = false;
+
+  constructor(private ngxCsvParser: NgxCsvParser) {
+  }
+
+  @ViewChild('fileImportInput') fileImportInput: any;
+
+  fileChangeListener($event: any): void {
+
+    const files = $event.srcElement.files;
+    this.header = (this.header as unknown as string) === 'true' || this.header === true;
+
+    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',' })
+      .pipe().subscribe({
+        next: (result): void => {
+          console.log('Result', result);
+          this.csvRecords = result;
+        },
+        error: (error: NgxCSVParserError): void => {
+          console.log('Error', error);
+        }
+      });
+  }
+}
+```
+
+## For ngx-csv-parser version 0.0.7 and below
 
 ```typescript
 import { Component } from '@angular/core';
