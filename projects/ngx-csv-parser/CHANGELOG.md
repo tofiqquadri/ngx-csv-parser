@@ -1,3 +1,7 @@
+# NgxCsvParser - v1.0.8 (20/03/2022)
+* New Features:
+* Peer dependency updated for Angular 13
+
 # NgxCsvParser - v0.0.7 (26/02/2021)
 * New Features:
 * Case insensitive check for csv file extension
