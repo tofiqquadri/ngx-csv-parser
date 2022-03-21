@@ -1,3 +1,7 @@
+# NgxCsvParser - v1.1.1 (21/03/2022)
+* New Features:
+* Type definitation not found issue fix
+
 # NgxCsvParser - v1.1.0 (20/03/2022)
 * New Features:
 * Updated Readme for usage
