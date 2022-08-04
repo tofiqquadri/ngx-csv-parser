@@ -167,6 +167,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularCSVParser"
+    }
+  }
 }
