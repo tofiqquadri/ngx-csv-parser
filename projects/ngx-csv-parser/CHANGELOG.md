@@ -1,3 +1,9 @@
+# NgxCsvParser - v1.2.0 (21/08/2022)
+* New Features:
+* Encoding type selection added
+* Empty CSV File error resolved
+* Angular version 14.X.X support added
+
 # NgxCsvParser - v1.1.1 (21/03/2022)
 * New Features:
 * Type definitation not found issue fix

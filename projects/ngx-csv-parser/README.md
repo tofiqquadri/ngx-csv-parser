@@ -41,7 +41,7 @@ export class AppModule { }
 
 # Configuration
 
-* The library has 2 configuration options.
+* The library has 3 configuration options.
 
 * header: true or false. This will allow you to make the first row of your CSV file act as the key for the result and the data from the remaining file as the value for those objects.
 
@@ -71,6 +71,9 @@ export class AppModule { }
 * delimiter: the marking factor which decides which symbol should be used to split the file.
 * Default delimiter is: `','`
 
+* encoding: this will define the encoding type to parse the csv file. You can select different encoding types depending on your file.
+* Default encoding type is: `'utf8'`
+
 # Use the import NgxCsvParser in your component.
 
 ## For ngx-csv-parser version 1.1.0 and above
@@ -98,7 +101,7 @@ export class AppComponent {
     const files = $event.srcElement.files;
     this.header = (this.header as unknown as string) === 'true' || this.header === true;
 
-    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',' })
+    this.ngxCsvParser.parse(files[0], { header: this.header, delimiter: ',', encoding: 'utf8' })
       .pipe().subscribe({
         next: (result): void => {
           console.log('Result', result);

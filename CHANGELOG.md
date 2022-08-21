@@ -1,3 +1,7 @@
+# NgxCsvParser - v1.2.0 (21/08/2022)
+* New Features:
+* Updated Angular version to 14.X.X
+
 # NgxCsvParser - v0.0.6 (01/08/2020)
 * New Features:
 * Fix undefined issue for the header
