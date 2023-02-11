@@ -1,6 +1,6 @@
 # NgxCsvParser
 
-* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 13.x.x+ as tested along with backward compatibility with previous Angular versions.
+* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 15.x.x+ as tested along with backward compatibility with previous Angular versions.
 
 * This library is in compliance to RFC 4180
 
@@ -167,6 +167,10 @@ I would like to thank my Friend Akshay Jain for his support and motivation to me
 * `npm i`
 * Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Sample CSV File will be provided in the example folder.
+
+## Hiring for Remote Frontend or Full Stack Developer?
+
+* Contact for Premium Software Development/Designing Service: https://tofiqquadri.com
 
 ## Services
 
