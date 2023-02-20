@@ -158,9 +158,6 @@ export class AppComponent {
   }
 }
 ```
-# Credits
-
-I would like to thank my Friend Akshay Jain for his support and motivation to me at the time of writing this library. Also, I want to thank the entire Angular team for creating this awesome framework.
 
 ## Running the example in local env
 

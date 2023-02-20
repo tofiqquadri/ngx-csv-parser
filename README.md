@@ -116,15 +116,16 @@ export class AppComponent {
   }
 }
 ```
-# Credits
-
-I would like to thank my Friend Akshay Jain for his support and motivation to me at the time of writing this library. Also, I want to thank the entire Angular team for creating this awesome framework.
 
 ## Running the example in local env
 
 * `npm i`
 * Run `ng serve` for a dev server and running the demo app. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Sample CSV File will be provided in the example folder.
+
+## Hiring for Remote Frontend or Full Stack Developer?
+
+* Contact for Premium Software Development/Designing Service: https://tofiqquadri.com
 
 ## Services
 
