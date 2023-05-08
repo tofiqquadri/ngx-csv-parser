@@ -1,3 +1,7 @@
+# NgxCsvParser - v1.3.0 (08/05/2023)
+* New Features:
+* Angular version 16.X.X support added
+
 # NgxCsvParser - v1.2.2 (11/02/2023)
 * New Features:
 * Angular version 15.X.X support added
