@@ -1,6 +1,6 @@
 # NgxCsvParser
 
-* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 10.x.x+ as tested along with backward compatibility with previous Angular versions.
+* This is a CSV Parser library which will help you to parse a selected CSV File in your Angular Application. Currently working with Angular version 16.x.x+ as tested along with backward compatibility with previous Angular versions.
 
 * This library is in compliance to RFC 4180
 

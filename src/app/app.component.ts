@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
-import { NgxCsvParser } from 'ngx-csv-parser';
-import { NgxCSVParserError } from 'ngx-csv-parser';
+import { NgxCsvParser } from 'dist/ngx-csv-parser';
+import { NgxCSVParserError } from 'dist/ngx-csv-parser';
 
 @Component({
     selector: 'app-root',
