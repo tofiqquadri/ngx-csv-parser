@@ -16,14 +16,14 @@ export class NgxCsvParser {
     parse(
         csvFile: File,
         config: CSVParserConfig
-    ): Observable<Array<any> | NgxCSVParserError> {
+    ): Observable<Array<{}> | NgxCSVParserError> {
         config = {
             ...this.defaultCSVParserConfig,
             ...config
         };
 
         const ngxCSVParserObserver = new Observable(
-            (observer: Observer<Array<any> | NgxCSVParserError>) => {
+            (observer: Observer<Array<{}> | NgxCSVParserError>) => {
                 try {
                     let csvRecords = null;
 
